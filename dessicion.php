@@ -1,0 +1,11 @@
+<?php 
+session_start();
+  if(isset($_SESSION['product_id']))
+{
+	header('location:cart.php');
+}
+else
+{
+	header('location:empty-cart.php');
+}
+?>

@@ -1,0 +1,11 @@
+<?php 
+session_start();
+if(isset($_SESSION['customer_login_id']))
+{
+	header('location:placeorder.php');
+}
+else
+{
+	header('location:log-in.php');
+}
+?>
